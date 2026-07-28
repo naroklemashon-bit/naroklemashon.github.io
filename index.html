@@ -171,7 +171,25 @@ body{
     text-decoration: underline;
 }
 
+@media (max-width: 650px) {
+  body {
+    flex-direction: column;
+  }
 
+  .left {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .right {
+    border-radius: 0 0 16px 16px;
+    width: 100%;
+    max-width: 360px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: none;
+  }
+}
     </style>
 </head>
 <body>
